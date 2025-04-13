@@ -111,6 +111,10 @@
     "branch": "master",
     "commit": "857c5ac632080dba10aae49dba902ce3abf91b35"
   },
+  "powershell.nvim": {
+    "branch": "main",
+    "commit": "2e37888fba1d4fb09b6993c9d26bb53a05bac801"
+  },
   "render-markdown.nvim": {
     "branch": "main",
     "commit": "8bb0d4725cc4909a603158d44ff28b6158ad9278"
