@@ -25,11 +25,27 @@ return {
 
   -- mason related
   {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "sqruff",
+      },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
       servers = {
         ["powershell_es"] = {},
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        sql = { "sqruff" },
       },
     },
   },
