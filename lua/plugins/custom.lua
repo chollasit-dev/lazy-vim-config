@@ -1,4 +1,5 @@
 return {
+  -- customization
   {
     "folke/tokyonight.nvim",
     opts = {
@@ -9,8 +10,11 @@ return {
       },
     },
   },
+
+  -- quality of life
   {
     "folke/snacks.nvim",
+    ---@module "snacks"
     ---@type snacks.Config
     opts = {
       scroll = {
@@ -18,17 +22,22 @@ return {
       },
     },
   },
+
+  -- mason related
   {
     "neovim/nvim-lspconfig",
+    ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
       servers = {
         ["powershell_es"] = {},
       },
     },
   },
+
+  -- language specific
   {
     "TheLeoP/powershell.nvim",
+    ---@module "powershell"
     ---@type powershell.user_config
     opts = {
       bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services",
