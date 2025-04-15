@@ -5,6 +5,7 @@
 -- generic
 local opt = vim.opt
 opt.shell = "pwsh"
+opt.history = 10
 
 -- direct variable-like
 local o = vim.o
